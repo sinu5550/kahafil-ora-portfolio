@@ -20,6 +20,8 @@ const fragmentMono = Fragment_Mono({
   weight: ["400"],
 });
 
+const amiri = { variable: "" }; // Removed next/font version
+
 export const metadata: Metadata = {
   title: "Kahafil Ora | Portfolio",
   description: "A Visionary Leader With 22+ Years of Experience In Innovation And Growth.",

@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "tailwindcss";
+
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -6,6 +9,7 @@
   --font-poppins: var(--font-poppins);
   --font-plus-jakarta: var(--font-plus-jakarta-sans);
   --font-fragment-mono: var(--font-fragment-mono);
+  --font-amiri: 'Amiri', serif;
   --breakpoint-3xl: 1920px;
 }
 

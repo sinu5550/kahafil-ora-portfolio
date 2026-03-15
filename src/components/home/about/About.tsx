@@ -17,7 +17,7 @@ export default function About() {
   ];
 
   return (
-    <section className="relative w-full py-32 bg-background flex flex-col items-center">
+    <section className="relative w-full py-24 bg-background flex flex-col items-center">
       <div className="container w-full">
         {/* Intro Header */}
         <div className="flex flex-col items-center text-center mb-24">
@@ -34,7 +34,7 @@ export default function About() {
         </div>
 
         {/* Separator Line */}
-        <div className="w-full h-px bg-black/10 mb-32"></div>
+        <div className="w-full h-0.5 bg-black/40 mb-32"></div>
 
         {/* Info Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-start ">
