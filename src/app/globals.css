@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --font-poppins: var(--font-poppins);
+  --font-plus-jakarta: var(--font-plus-jakarta-sans);
+  --font-fragment-mono: var(--font-fragment-mono);
+  --breakpoint-3xl: 1920px;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-plus-jakarta), sans-serif;
+  min-height: 100vh;
+}
+
+/* Base typography defaults using Tailwind tokens */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+@utility container-custom {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  @media (min-width: 1280px) {
+    max-width: 1260px; /* standard 1280 - padding */
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1430px; /* 1440 - padding */
+  }
+
+  @media (min-width: 1920px) {
+    max-width: 1900px; /* 1920 - padding */
+  }
+}
