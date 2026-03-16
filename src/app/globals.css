@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import "tailwindcss";
-
 
 @theme inline {
   --color-background: var(--background);
@@ -9,14 +8,14 @@
   --font-poppins: var(--font-poppins);
   --font-plus-jakarta: var(--font-plus-jakarta-sans);
   --font-fragment-mono: var(--font-fragment-mono);
-  --font-amiri: 'Amiri', serif;
+  --font-amiri: "Amiri", serif;
   --breakpoint-3xl: 1920px;
 }
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #171717;
+  --primary: #444444;
 }
 
 body {
@@ -52,6 +51,6 @@ h6 {
   }
 
   @media (min-width: 1920px) {
-    max-width: 1900px; /* 1920 - padding */
+    max-width: 1850px; /* 1920 - padding */
   }
 }

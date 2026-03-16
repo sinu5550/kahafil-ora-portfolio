@@ -16,18 +16,18 @@ export default function Hero() {
 
       <div className="container-custom relative w-full h-[950px] flex flex-col items-center justify-center z-10 font-poppins">
         {/* Large Background Text: KAHAFIL */}
-        <div className="absolute top-20 left-4 z-0">
-          <h1 className="text-[120px] lg:text-[150px]  font-black leading-none tracking-tighter text-black select-none opacity-90 m-0">
+        <div className="absolute top-28 left-4 z-0">
+          <h1 className="text-[120px] lg:text-[150px]  font-black leading-none tracking-tighter text-[#444444] select-none m-0">
             KAHAFIL
           </h1>
-          <span className="text-xl ml-1.5 md:text-3xl font-bold text-black/60 tracking-tighter block -mt-2">
+          <span className="text-xl ml-1.5 md:text-3xl font-bold text-[#444444] tracking-tighter block -mt-2">
             {`2K${new Date().getFullYear().toString().slice(-2)}`}
           </span>
         </div>
 
         {/* Large Background Text: ORA */}
         <div className="absolute bottom-20 right-10 z-0">
-          <h2 className="text-[120px] lg:text-[150px] font-black leading-none tracking-tighter text-black select-none opacity-90">
+          <h2 className="text-[120px] lg:text-[150px] font-black leading-none tracking-tighter text-[#444444] select-none ">
             ORA
           </h2>
         </div>
@@ -70,25 +70,25 @@ export default function Hero() {
               className="object-contain"
             />
           </div>
-          <span className="relative text-[22px] font-fragment-mono tracking-widest text-black/60 uppercase -ml-40">
+          <span className="relative text-[22px] font-fragment-mono tracking-widest text-[#444444] uppercase -ml-40">
             IT CONSULTANT
           </span>
         </div>
 
         {/* Vertical Text: /PORTFOLIO */}
         <div className="absolute left-12 bottom-[35%] z-30 flex items-center gap-4 -rotate-90 origin-left">
-          <span className="text-[22px] font-bold tracking-widest text-black/40 uppercase">
-            /PORTFOLIO
+          <span className="text-[22px] font-medium tracking-widest text-[#444444] uppercase">
+            ./PORTFOLIO
           </span>
-          <div className="w-24 h-px bg-black/20"></div>
+          <div className="w-24 h-[0.5px] bg-black"></div>
         </div>
 
         {/* Scroll Down Section */}
         <div className="absolute left-8 bottom-26 z-30 flex flex-col items-start gap-4">
-          <span className="text-[22px] font-poppins tracking-widest text-black/30 uppercase">
+          <span className="text-[22px] font-poppins tracking-widest text-[#444444] uppercase">
             SCROLL DOWN
           </span>
-          <div className="text-black/30 text-4xl">↓</div>
+          <div className="text-[#444444] text-4xl">↓</div>
         </div>
       </div>
     </section>
