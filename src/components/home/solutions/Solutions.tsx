@@ -100,13 +100,13 @@ const Solutions = () => {
 
   return (
     <section className="py-24 bg-white overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-22 3xl:px-0">
         <h2 className="text-[32px] md:text-[48px] font-poppins font-semibold text-[#333] mb-12">
           some solutions that i created<span className="text-[#9747FF]">.</span>
         </h2>
 
         {/* Tab Navigation */}
-        <div className="flex flex-wrap items-center justify-between mb-16 ">
+        <div className="flex  items-center justify-between mb-16 ">
           {categories.map((category, index) => (
             <React.Fragment key={category.id}>
               <button

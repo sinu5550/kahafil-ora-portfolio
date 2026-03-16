@@ -4,6 +4,9 @@ import About from "@/components/home/about/About";
 import Brands from "@/components/home/brands/Brands";
 import Leadership from "@/components/home/leadership/Leadership";
 import Solutions from "@/components/home/solutions/Solutions";
+import Testimonials from "@/components/home/testimonials/Testimonials";
+import Gallery from "@/components/home/gallery/Gallery";
+import Footer from "@/components/shared/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
       <Brands />
       <Leadership />
       <Solutions />
+      <Testimonials />
+      <Gallery />
+      <Footer />
     </main>
   );
 }
