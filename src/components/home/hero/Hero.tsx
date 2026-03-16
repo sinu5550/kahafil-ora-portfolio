@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-[950px] w-full flex items-center justify-center overflow-hidden bg-background">
+    <section className="relative h-screen 3xl:h-[950px] w-full flex items-center justify-center overflow-hidden bg-background">
       {/* Background Texture/Grid */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
@@ -14,10 +14,10 @@ export default function Hero() {
         />
       </div>
 
-      <div className="container-custom relative w-full h-[950px] flex flex-col items-center justify-center z-10 font-poppins">
+      <div className="container-custom relative w-full h-screen 3xl:h-[950px] flex flex-col items-center justify-center z-10 font-poppins">
         {/* Large Background Text: KAHAFIL */}
         <div className="absolute top-28 left-4 z-0">
-          <h1 className="text-[120px] lg:text-[150px]  font-black leading-none tracking-tighter text-[#444444] select-none m-0">
+          <h1 className="text-[140px] 3xl:text-[150px]  font-black leading-none tracking-tighter text-[#444444] select-none m-0">
             KAHAFIL
           </h1>
           <span className="text-xl ml-1.5 md:text-3xl font-bold text-[#444444] tracking-tighter block -mt-2">
@@ -26,32 +26,32 @@ export default function Hero() {
         </div>
 
         {/* Large Background Text: ORA */}
-        <div className="absolute bottom-20 right-10 z-0">
+        <div className="absolute bottom-8 3xl:bottom-12 right-10 z-0">
           <h2 className="text-[120px] lg:text-[150px] font-black leading-none tracking-tighter text-[#444444] select-none ">
             ORA
           </h2>
         </div>
 
         {/* Center Person Image */}
-        <div className="relative z-20 top-[30px] flex items-center justify-center">
+        <div className="relative z-50 top-[30px] flex items-center justify-center">
           <div className="relative flex justify-center cursor-pointer group">
             <Image
               src="/assets/kahafil-ora-original.svg"
               alt="Kahafil Ora"
               width={1038}
               height={888}
-              className="grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out object-contain"
+              className="grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out object-contain 110:scale-90 125:scale-80 3xl:scale-100"
               priority
             />
           </div>
         </div>
 
         {/* Biography Section */}
-        <div className="absolute top-[20%] right-8 w-full max-w-[320px] md:max-w-[650px] z-30 text-right">
-          <span className="text-[24px] font-fragment-mono tracking-widest text-black/40 block mb-3 uppercase">
+        <div className="absolute top-[20%] right-8 w-full max-w-[550px] 3xl:max-w-[650px] z-30 text-right">
+          <span className="text-[24px] font-fragment-mono tracking-widest text-[#444444]/50 block mb-3 uppercase">
             BIOGRAPHY
           </span>
-          <p className="font-plus-jakarta text-[20px]  leading-relaxed text-black/70 font-medium">
+          <p className="font-plus-jakarta text-[20px]  leading-relaxed text-[#444444] font-medium">
             A Visionary Leader With 22+ Years of Experience In Innovation And
             Growth. As MD Of Goinnovior Limited And Co-Founder Of 360D Soul,
             Lifeinnovior, And Codeinnovior, He Blends Tech, Business, And Social
@@ -70,13 +70,13 @@ export default function Hero() {
               className="object-contain"
             />
           </div>
-          <span className="relative text-[22px] font-fragment-mono tracking-widest text-[#444444] uppercase -ml-40">
+          <span className="relative text-[22px] font-fragment-mono tracking-widest text-[#444444] uppercase -ml-46">
             IT CONSULTANT
           </span>
         </div>
 
         {/* Vertical Text: /PORTFOLIO */}
-        <div className="absolute left-12 bottom-[35%] z-30 flex items-center gap-4 -rotate-90 origin-left">
+        <div className="absolute left-12 bottom-[20%] 3xl:bottom-[25%] z-30 flex items-center gap-4 -rotate-90 origin-left">
           <span className="text-[22px] font-medium tracking-widest text-[#444444] uppercase">
             ./PORTFOLIO
           </span>
@@ -84,7 +84,7 @@ export default function Hero() {
         </div>
 
         {/* Scroll Down Section */}
-        <div className="absolute left-8 bottom-26 z-30 flex flex-col items-start gap-4">
+        <div className="absolute left-8 bottom-12 3xl:bottom-16 z-30 flex flex-col items-start gap-4">
           <span className="text-[22px] font-poppins tracking-widest text-[#444444] uppercase">
             SCROLL DOWN
           </span>
