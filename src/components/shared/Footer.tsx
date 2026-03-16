@@ -139,10 +139,7 @@ const Footer = () => {
             Terms & Conditions
           </Link>
 
-          <button
-            onClick={scrollToTop}
-            className="p-3  transition-all group "
-          >
+          <button onClick={scrollToTop} className="p-3  transition-all group ">
             <svg
               width="24"
               height="24"
