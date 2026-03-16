@@ -18,7 +18,7 @@ export default function About() {
 
   return (
     <section className="relative w-full py-24 bg-background flex flex-col items-center">
-      <div className="container w-full">
+      <div className="container w-full px-4">
         {/* Intro Header */}
         <div className="flex flex-col items-center text-center mb-24">
           <span className="text-[12px] md:text-[14px] font-fragment-mono tracking-[0.4em] text-black/40 uppercase mb-8">

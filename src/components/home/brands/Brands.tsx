@@ -8,7 +8,7 @@ const Brands = () => {
 
   return (
     <section className="pb-24 pt-8 bg-white overflow-hidden">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <h2 className="text-[32px] md:text-[48px] font-poppins font-semibold text-[#333] mb-20">
           I help brands to drive results
           <span className="text-[#9747FF]">.</span>
