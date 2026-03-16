@@ -65,7 +65,7 @@ const Leadership = () => {
             ))}
         </div>
 
-        <div className="container mx-auto relative z-10 px-4 md:px-0">
+        <div className="container mx-auto relative z-10 px-4 ">
           <div className="mb-20">
             <h2 className="text-[32px] md:text-[48px] font-poppins font-semibold text-[#333] mb-8">
               leadership roles<span className="text-[#9747FF]">.</span>
