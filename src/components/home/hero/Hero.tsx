@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen 3xl:h-[950px] w-full flex items-center justify-center overflow-hidden bg-background">
+    <section className="relative h-screen 3xl:h-[950px] w-full flex items-center justify-center overflow-hidden bg-background ">
       {/* Background Texture/Grid */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
@@ -47,7 +47,7 @@ export default function Hero() {
         </div>
 
         {/* Biography Section */}
-        <div className="absolute bottom-[4%] md:top-[20%] right-8 w-full max-w-[440px] md:max-w-[550px] 3xl:max-w-[650px] z-30 text-right">
+        <div className="absolute bottom-[4%] md:top-[20%] px-4 md:px-0 md:right-8 w-full max-w-[440px] md:max-w-[550px] 3xl:max-w-[650px] z-30 text-right">
           <span className="text-[24px] font-fragment-mono tracking-widest text-[#444444]/50 block mb-3 uppercase">
             BIOGRAPHY
           </span>
