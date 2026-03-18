@@ -14,7 +14,8 @@ export default function Hero() {
         />
       </div>
 
-      <div className="container-custom relative w-full h-screen 3xl:h-[950px] flex flex-col items-center justify-center z-10 font-poppins">
+      {/* Desktop View */}
+      <div className="hidden md:flex container-custom relative w-full h-screen 3xl:h-[950px] flex-col items-center justify-center z-10 font-poppins">
         {/* Large Background Text: KAHAFIL */}
         <div className="absolute top-28 md:left-4 z-0">
           <h1 className="text-[100px] md:text-[140px] 3xl:text-[150px]  font-black leading-none tracking-tighter text-[#444444] select-none ">
@@ -89,6 +90,66 @@ export default function Hero() {
             SCROLL DOWN
           </span>
           <div className="text-[#444444] text-4xl">↓</div>
+        </div>
+      </div>
+
+      {/* Mobile View */}
+      <div className="md:hidden flex flex-col items-center justify-start w-full px-6 pt-30 pb-20 z-10 font-poppins">
+        {/* Large Text: KAHAFIL */}
+        <div className="w-full text-center mb-4">
+          <h1 className="text-[60px] font-black leading-none tracking-tighter text-[#444444] select-none">
+            KAHAFIL
+          </h1>
+        </div>
+
+        {/* Hero Image & IT Consultant Area (The only parts with relative/absolute) */}
+        <div className="relative w-full aspect-4/4 -my-10  flex items-center justify-center">
+          {/* Centered Image */}
+          <div className="relative z-20 w-full h-full cursor-pointer group">
+            <Image
+              src="/assets/kahafil-ora-original.svg"
+              alt="Kahafil Ora"
+              fill
+              className="grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out object-contain"
+              priority
+            />
+          </div>
+
+          {/* IT CONSULTANT Label with Absolute Positioning */}
+          <div className="absolute left-10 top-1/2 -translate-y-1/2 z-10 flex flex-col items-center group">
+            <div className="relative w-[80px] h-[60px] -mb-8">
+              <Image
+                src="/assets/arrow-vector.svg"
+                alt="Decorative Arrow"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span className="relative text-[10px] font-fragment-mono tracking-widest text-[#444444] uppercase -ml-20">
+              IT CONSULTANT
+            </span>
+          </div>
+        </div>
+
+        {/* Large Text: ORA */}
+        <div className="w-full text-right mt-8">
+          <h2 className="text-[60px] font-black leading-none tracking-tighter text-[#444444] select-none">
+            ORA
+          </h2>
+        </div>
+
+        {/* Biography Section (Linear flow) */}
+        <div className="w-full text-right">
+          <span className="text-[18px] font-fragment-mono tracking-widest text-[#444444]/50 block mb-3 uppercase">
+            BIOGRAPHY
+          </span>
+          <p className="font-plus-jakarta text-[12px] leading-relaxed text-[#444444] font-medium">
+            A Visionary Leader With 22+ Years of Experience In Innovation And
+            Growth. As MD Of Goinnovior Limited And Co-Founder Of 360D Soul,
+            Lifeinnovior, And Codeinnovior, He Blends Tech, Business, And Social
+            Impact—Delivering ICT And InfoSec Solutions, Promoting Mental
+            Health, And Enabling Free Tech Education.
+          </p>
         </div>
       </div>
     </section>

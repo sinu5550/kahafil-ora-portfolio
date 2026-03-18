@@ -24,7 +24,7 @@ export default function Navbar() {
   ];
 
   const socialLinks = [
-    { name: "MAIL", href: "mailto:hello@kahafiloras.com" },
+    { name: "MAIL", href: "mailto:kahafil@goinnovior.com" },
     { name: "X", href: "https://x.com" },
     { name: "FB", href: "https://facebook.com" },
     { name: "LI", href: "https://linkedin.com" },
@@ -40,12 +40,12 @@ export default function Navbar() {
   // Custom Hamburger Icon (4 bars alternating)
   const MenuIcon = () => (
     <svg 
-      width="32" 
-      height="32" 
+      width="28" 
+      height="28" 
       viewBox="0 0 32 32" 
       fill="none" 
       xmlns="http://www.w3.org/2000/svg"
-      className="text-primary"
+      className="text-primary -mt-2"
     >
       <rect x="4" y="6" width="24" height="2.5" rx="1.25" fill="currentColor" />
       <rect x="4" y="12" width="18" height="2.5" rx="1.25" fill="currentColor" />
@@ -64,7 +64,7 @@ export default function Navbar() {
             className="p-2 -ml-2 hover:opacity-70 transition-opacity"
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={32} className="text-primary" /> : <MenuIcon />}
+            {isOpen ? <X size={32} className="text-primary" /> : <MenuIcon  />}
           </button>
         </div>
 
