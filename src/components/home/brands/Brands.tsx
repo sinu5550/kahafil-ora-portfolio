@@ -8,17 +8,17 @@ const Brands = () => {
 
   return (
     <section className="pb-24 pt-8 bg-white overflow-hidden">
-      <div className="container mx-auto px-22 3xl:px-0">
+      <div className="container mx-auto px-4 md:px-22 3xl:px-0">
         <h2 className="text-[32px] md:text-[48px] font-poppins font-semibold text-[#333] mb-20">
           I help brands to drive results
           <span className="text-[#9747FF]">.</span>
         </h2>
       </div>
 
-      <div className="flex flex-col gap-12 relative container-custom px-25">
+      <div className="flex flex-col gap-12 relative container-custom px-4 md:px-25">
         {/* Decorative Gradients for Fading Edges */}
-        <div className="absolute top-0 left-25 w-[10%] h-full bg-linear-to-r from-white via-white/60 via-40% to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute top-0 right-25 w-[10%] h-full bg-linear-to-l from-white via-white/60 via-40% to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute top-0 left-4 md:left-25 w-[10%] h-full bg-linear-to-r from-white via-white/60 via-40% to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute top-0 right-4 md:right-25 w-[10%] h-full bg-linear-to-l from-white via-white/60 via-40% to-transparent z-10 pointer-events-none"></div>
 
         {/* Top Marquee: Right to Left */}
         <div className="relative flex overflow-hidden">

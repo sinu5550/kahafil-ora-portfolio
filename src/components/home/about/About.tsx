@@ -18,13 +18,13 @@ export default function About() {
 
   return (
     <section className="relative w-full py-24 bg-background flex flex-col items-center">
-      <div className="container w-full px-22 3xl:px-0 ">
+      <div className="container w-full px-4 md:px-22 3xl:px-0 ">
         {/* Intro Header */}
         <div className="flex flex-col items-center text-center mb-24">
-          <span className="text-[12px] md:text-[14px] font-fragment-mono tracking-[0.4em] text-black/40 uppercase mb-8">
+          <span className="text-[14px] md:text-[20px] font-fragment-mono tracking-[0.4em] text-black/40 uppercase mb-8">
             ABOUT KAHAFIL ORA
           </span>
-          <h2 className="text-[24px] md:text-[35px] lg:text-[35px] font-poppins font-light leading-normal text-black max-w-[1440px]">
+          <h2 className="text-[20px] md:text-[35px] lg:text-[35px] font-poppins font-light leading-normal text-black max-w-[1440px]">
             Kahafil Ora Is An Experienced IT Consultant Known For Delivering
             Smart, Tech-Driven Solutions To Businesses. With A Strong Grasp Of
             IT Infrastructure And Digital Strategy, He Helps Organizations
@@ -34,13 +34,13 @@ export default function About() {
         </div>
 
         {/* Separator Line */}
-        <div className="w-full h-0.5 bg-black/40 mb-32"></div>
+        <div className="w-full h-0.5 bg-black/40 mb-32 hidden md:block"></div>
 
         {/* Info Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-start ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-start px-4 md:px-0">
           {/* Left Column: Skills and Contact */}
-          <div className="flex flex-col  h-[500px] justify-between">
-            <div>
+          <div className="flex flex-col  h-[500px] justify-between py-8 md:py-0">
+            <div className="">
               <span className="text-[12px] md:text-[22px] font-fragment-mono tracking-wider text-black/40 uppercase block mb-4">
                 DRIVING DIGITAL INNOVATION ACROSS BANGLADESH AND BEYOND
               </span>
@@ -71,7 +71,7 @@ export default function About() {
 
           {/* Center Column: Profile Image */}
           <div className="flex justify-center items-center relative h-full">
-            <div className="relative p-4 border border-black/60 rounded-[300px] h-[500px] w-[297px]">
+            <div className="relative p-4 border border-black/60 rounded-[300px] h-[400px] w-[230px] md:h-[500px] md:w-[297px]">
               <div className="relative  h-full w-full  rounded-[300px] overflow-hidden">
                 <Image
                   src="/assets/kahafil-ora-about-original.svg"
@@ -84,13 +84,13 @@ export default function About() {
           </div>
 
           {/* Right Column: Statistics */}
-          <div className="flex flex-col  h-full justify-between ">
+          <div className="flex md:flex-col flex-row  h-full w-full justify-between gap-4">
             {stats.map((stat) => (
-              <div key={stat.label} className="text-right">
+              <div key={stat.label} className="md:text-right text-center">
                 <span className="text-[12px] md:text-[22px] font-fragment-mono tracking-wider text-black/40 uppercase block mb-4">
                   {stat.label}
                 </span>
-                <span className="text-[60px] md:text-[80px] font-poppins font-extralight leading-none text-black">
+                <span className="text-[45px] md:text-[80px] font-poppins font-extralight leading-none text-black">
                   <CountUp
                     end={stat.value}
                     suffix={stat.suffix}

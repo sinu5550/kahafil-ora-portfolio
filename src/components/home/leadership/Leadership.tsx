@@ -54,7 +54,10 @@ const Leadership = () => {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
 
   return (
-    <section ref={containerRef} className="relative w-full h-[250vh] bg-white">
+    <section
+      ref={containerRef}
+      className="relative w-full h-[110vh] md:h-[250vh] bg-white"
+    >
       <div className="sticky top-0 h-screen w-full flex flex-col justify-center overflow-hidden">
         {/* Vertical Striped Background */}
         <div className="container-custom absolute inset-0 z-0 pointer-events-none flex justify-between px-4 md:px-0">
@@ -65,8 +68,8 @@ const Leadership = () => {
             ))}
         </div>
 
-        <div className="container mx-auto relative z-10 px-22 3xl:px-0">
-          <div className="mb-20">
+        <div className="container mx-auto relative z-10 px-4 md:px-22 3xl:px-0">
+          <div className="mt-22 md:mb-20">
             <h2 className="text-[32px] md:text-[48px] font-poppins font-semibold text-[#333] mb-8">
               leadership roles<span className="text-[#9747FF]">.</span>
             </h2>
@@ -88,10 +91,10 @@ const Leadership = () => {
               {/* Fixed Header */}
               <div className="w-full border-b border-black/10 bg-white z-20">
                 <div className="flex text-left">
-                  <div className="w-2/5 py-6 text-[14px] font-fragment-mono text-black/40 uppercase tracking-widest font-normal text-left">
+                  <div className="w-2/5 py-6 text-[12px] md:text-[14px] font-fragment-mono text-black/40 uppercase tracking-widest font-normal text-left">
                     Organization
                   </div>
-                  <div className="w-3/3 py-6 text-[14px] font-fragment-mono text-black/40 uppercase tracking-widest font-normal text-left">
+                  <div className="w-3/3 py-6 text-[12px] md:text-[14px] font-fragment-mono text-black/40 uppercase tracking-widest font-normal text-center">
                     Impact
                   </div>
                 </div>
@@ -105,7 +108,7 @@ const Leadership = () => {
                       key={index}
                       className="border-b border-black/10 group hover:bg-black/2 transition-colors flex py-8 text-left"
                     >
-                      <div className="w-2/5 pr-8 text-[18px] md:text-[22px] font-amiri text-black/80 font-medium align-top whitespace-nowrap text-left">
+                      <div className="w-2/5 pr-8 text-[18px] md:text-[22px] font-amiri text-black/80 font-medium align-top md:whitespace-nowrap text-left">
                         {role.organization}
                       </div>
                       <div className="w-3/3 text-[16px] md:text-[20px] font-amiri text-black/60 leading-relaxed text-left">
