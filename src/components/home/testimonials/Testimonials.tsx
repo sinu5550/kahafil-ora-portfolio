@@ -37,8 +37,8 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="py-32 bg-white overflow-hidden">
-      <div className="container mx-auto flex flex-col items-center px-22 3xl:px-0">
+    <section className="md:py-32 bg-white overflow-hidden">
+      <div className="container mx-auto flex flex-col items-center px-4 md:px-22 3xl:px-0">
         <span className="text-[20px] font-fragment-mono tracking-wider text-[#444444]/40 mb-12 uppercase text-center">
           TESTIMONIAL
         </span>
