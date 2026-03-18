@@ -97,7 +97,7 @@ export default function Hero() {
       <div className="md:hidden flex flex-col items-center justify-start w-full px-6 pt-30 pb-20 z-10 font-poppins">
         {/* Large Text: KAHAFIL */}
         <div className="w-full text-center mb-4">
-          <h1 className="text-[60px] font-black leading-none tracking-tighter text-[#444444] select-none">
+          <h1 className="text-[80px]   font-black leading-none tracking-tighter text-[#444444] select-none">
             KAHAFIL
           </h1>
         </div>
@@ -133,14 +133,14 @@ export default function Hero() {
 
         {/* Large Text: ORA */}
         <div className="w-full text-right mt-8">
-          <h2 className="text-[60px] font-black leading-none tracking-tighter text-[#444444] select-none">
+          <h2 className="text-[80px] font-black leading-none tracking-tighter text-[#444444] select-none">
             ORA
           </h2>
         </div>
 
         {/* Biography Section (Linear flow) */}
         <div className="w-full text-right">
-          <span className="text-[18px] font-fragment-mono tracking-widest text-[#444444]/50 block mb-3 uppercase">
+          <span className="text-[18px] font-fragment-mono tracking-widest text-[#444444]/50 block md:mb-3 uppercase">
             BIOGRAPHY
           </span>
           <p className="font-plus-jakarta text-[12px] leading-relaxed text-[#444444] font-medium">

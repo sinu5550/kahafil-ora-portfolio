@@ -39,7 +39,7 @@ export default function About() {
         {/* Info Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-start px-4 md:px-0">
           {/* Left Column: Skills and Contact */}
-          <div className="flex flex-col  h-[500px] justify-between py-8 md:py-0">
+          <div className="flex flex-col  h-[500px] justify-between py-0">
             <div className="">
               <span className="text-[12px] md:text-[22px] font-fragment-mono tracking-wider text-black/40 uppercase block mb-4">
                 DRIVING DIGITAL INNOVATION ACROSS BANGLADESH AND BEYOND

@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <footer className="bg-white  pt-16">
       <div className="container mx-auto px-12">
-        <div className="grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-24 flex justify-between">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-24 md:flex justify-between">
           {/* Column 1: Contact */}
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-3 group cursor-pointer">
@@ -85,7 +85,7 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Address */}
-          <div className="flex flex-col items-end">
+          <div className="flex flex-col md:items-end">
             <div className="flex flex-col gap-4 text-[18px] md:text-[22px] font-plus-jakarta text-black/60 ">
               <p className="hover:border-b w-fit">
                 Lift 4, House 774, Road 11, Avenue
@@ -97,7 +97,7 @@ const Footer = () => {
           </div>
 
           {/* Column 4: Socials */}
-          <div className="flex flex-col items-end">
+          <div className="flex flex-col md:items-end">
             <div className="flex flex-col  gap-4 text-[18px] md:text-[22px] font-plus-jakarta text-black/60 text-right md:text-left">
               <Link href="#" className="hover:border-b w-fit">
                 X
@@ -121,25 +121,25 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="bg-[#f0f0f0] py-6 px-12">
-        <div className="container mx-auto flex justify-between items-center ">
-          <p className="text-[14px] md:text-[16px] text-black/50 font-plus-jakarta">
+        <div className="container mx-auto flex flex-col md:flex-row md:items-center gap-4 md:gap-0 justify-between">
+          <p className="text-[14px] md:text-[16px] text-black/50 font-plus-jakarta order-2 md:order-0">
             Copyright © 2025 Kahafil Ora
           </p>
 
           <Link
             href="#"
-            className="text-[14px] md:text-[16px] text-black/50 hover:text-black font-plus-jakarta transition-colors"
+            className="text-[14px] md:text-[16px] text-black/50 hover:text-black font-plus-jakarta transition-colors order-3 md:order-0"
           >
             Privacy & Policy
           </Link>
           <Link
             href="#"
-            className="text-[14px] md:text-[16px] text-black/50 hover:text-black font-plus-jakarta transition-colors"
+            className="text-[14px] md:text-[16px] text-black/50 hover:text-black font-plus-jakarta transition-colors order-4 md:order-0"
           >
             Terms & Conditions
           </Link>
 
-          <button onClick={scrollToTop} className="p-3  transition-all group ">
+          <button onClick={scrollToTop} className="p-3  transition-all group order-1 md:order-0">
             <svg
               width="24"
               height="24"

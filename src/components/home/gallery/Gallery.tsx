@@ -59,8 +59,8 @@ const Gallery = () => {
 
       {/* Large Display Text */}
       <div className="w-full py-12 flex justify-center">
-        <h2 className="text-[220px] 3xl:text-[290px] font-black leading-none tracking-tighter text-[#444444] select-none uppercase px-2">
-          KAHAFIL ORA
+        <h2 className="text-[80px] md:text-[220px] 3xl:text-[290px] font-black leading-none tracking-tighter text-[#444444] select-none uppercase px-2 text-center">
+          KAHAFIL <span className="flex justify-end md:inline">ORA</span>
         </h2>
       </div>
     </section>
