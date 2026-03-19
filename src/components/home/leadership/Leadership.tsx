@@ -122,7 +122,7 @@ const Leadership = () => {
                   <div className="w-2/5 py-6 text-[12px] md:text-[14px] font-fragment-mono text-black/40 uppercase tracking-widest font-normal text-left">
                     Organization
                   </div>
-                  <div className="w-3/3 py-6 text-[12px] md:text-[14px] font-fragment-mono text-black/40 uppercase tracking-widest font-normal text-center">
+                  <div className="w-3/3 py-6 text-[12px] md:text-[14px] font-fragment-mono text-black/40 uppercase tracking-widest font-normal text-center md:text-left">
                     Impact
                   </div>
                 </div>
