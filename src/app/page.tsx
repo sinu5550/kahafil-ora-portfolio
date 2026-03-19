@@ -10,7 +10,7 @@ import Footer from "@/components/shared/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background overflow-x-hidden">
+    <main className="min-h-screen bg-background">
       <Navbar />
       <Hero />
       <About />

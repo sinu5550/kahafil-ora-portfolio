@@ -1,9 +1,28 @@
 "use client";
-import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useRef, useState, useEffect } from "react";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 const Leadership = () => {
   const containerRef = useRef<HTMLElement>(null);
+  const tableBodyRef = useRef<HTMLDivElement>(null);
+  const tableContainerRef = useRef<HTMLDivElement>(null);
+  const [scrollDistance, setScrollDistance] = useState(0);
+
+  useEffect(() => {
+    const calculateScroll = () => {
+      if (tableBodyRef.current && tableContainerRef.current) {
+        const bodyHeight = tableBodyRef.current.scrollHeight;
+        const containerHeight = tableContainerRef.current.offsetHeight;
+        // Increase distance slightly to ensure the last item is fully visible and has some space
+        const distance = bodyHeight - containerHeight;
+        setScrollDistance(distance > 0 ? distance : 0);
+      }
+    };
+
+    calculateScroll();
+    window.addEventListener("resize", calculateScroll);
+    return () => window.removeEventListener("resize", calculateScroll);
+  }, []);
 
   const roles = [
     {
@@ -49,16 +68,22 @@ const Leadership = () => {
     offset: ["start start", "end end"],
   });
 
+  // Smooth the scroll progress
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   // Calculate the transform distance.
-  // We want the table to move up by its height - container height.
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
+  const y = useTransform(smoothProgress, [0, 1], [0, -scrollDistance]);
 
   return (
     <section
       ref={containerRef}
-      className="relative w-full h-[110vh] md:h-[250vh] bg-white"
+      className="relative w-full h-[400vh] bg-white"
     >
-      <div className="sticky top-0 h-screen w-full flex flex-col justify-center overflow-hidden">
+      <div className="sticky top-0 h-screen w-full flex flex-col justify-center overflow-hidden bg-white z-20">
         {/* Vertical Striped Background */}
         <div className="container-custom absolute inset-0 z-0 pointer-events-none flex justify-between px-4 md:px-0">
           {Array(14)
@@ -69,7 +94,7 @@ const Leadership = () => {
         </div>
 
         <div className="container mx-auto relative z-10 px-4 md:px-22 3xl:px-0">
-          <div className="mt-22 md:mb-20">
+          <div className="mt-24 md:mb-12">
             <h2 className="text-[32px] md:text-[48px] font-poppins font-semibold text-[#333] mb-8">
               leadership roles<span className="text-[#9747FF]">.</span>
             </h2>
@@ -87,7 +112,10 @@ const Leadership = () => {
             </div>
 
             {/* Right Table Section - Pinned & Scrollable */}
-            <div className="lg:col-span-7 h-[70vh] flex flex-col relative overflow-hidden">
+            <div 
+              ref={tableContainerRef}
+              className="lg:col-span-7 h-[70vh] flex flex-col relative overflow-hidden"
+            >
               {/* Fixed Header */}
               <div className="w-full border-b border-black/10 bg-white z-20">
                 <div className="flex text-left">
@@ -101,8 +129,8 @@ const Leadership = () => {
               </div>
 
               {/* Scrolling Body */}
-              <motion.div style={{ y }} className="w-full">
-                <div className="w-full">
+              <motion.div style={{ y }} className="w-full " ref={tableBodyRef}>
+                <div className="w-full pb-40">
                   {roles.map((role, index) => (
                     <div
                       key={index}
