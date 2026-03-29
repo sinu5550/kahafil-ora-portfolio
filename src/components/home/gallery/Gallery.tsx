@@ -23,7 +23,7 @@ const Gallery = () => {
         {galleryImages.map((image, index) => (
           <div
             key={index}
-            className="relative group aspect-4/5 overflow-hidden cursor-pointer border-r border-white/10 last:border-0 md:aspect-auto md:h-[400px]"
+            className="relative group aspect-4/5 overflow-hidden cursor-pointer border-r border-white/10 last:border-0 md:aspect-square"
           >
             <Image
               src={image.src}
@@ -59,9 +59,20 @@ const Gallery = () => {
 
       {/* Large Display Text */}
       <div className="w-full py-12 flex justify-center">
-        <h2 className="text-[80px] md:text-[220px] 3xl:text-[290px] font-black leading-none tracking-tighter text-[#444444] select-none uppercase px-2 text-center">
-          KAHAFIL <span className="flex justify-end md:inline">ORA</span>
-        </h2>
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            aspectRatio: "1920 / 218",
+          }}
+        >
+          <Image
+            src="/assets/name-text.svg"
+            alt="Name Text"
+            fill
+            style={{ objectFit: "contain" }}
+          />
+        </div>
       </div>
     </section>
   );
