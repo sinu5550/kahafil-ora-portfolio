@@ -34,7 +34,7 @@ export default function ThoughtsHero({
   fbLink = defaultThought.fbLink,
 }: Partial<ThoughtHeroProps>) {
   return (
-    <section className="relative w-full pt-24 md:pb-8 bg-white">
+    <section className="relative w-full pt-24 pb-12 md:pb-16 bg-white">
       <div className="container-custom mx-auto px-4 md:px-0">
         <div className="relative w-full h-[450px]  md:h-[800px]  rounded-[24px] overflow-hidden group">
           {/* Background Image */}

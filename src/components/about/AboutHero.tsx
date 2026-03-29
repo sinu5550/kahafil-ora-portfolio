@@ -181,7 +181,7 @@ export default function AboutHero() {
   const [activeTab, setActiveTab] = useState("biography");
 
   return (
-    <section className="relative h-screen min-h-[700px] w-full bg-white overflow-hidden pt-24 pb-10">
+    <section className="relative h-auto md:h-screen md:min-h-[700px] w-full bg-white overflow-hidden pt-0 md:pt-24 pb-10">
       {/* Background Dot Grid Pattern */}
       <div
         className="absolute top-22 right-0 bottom-10 left-0 z-0 opacity-10 pointer-events-none"
@@ -194,8 +194,8 @@ export default function AboutHero() {
       <div className="w-full h-full relative z-10 px-0">
         <div className="grid grid-cols-1 md:grid-cols-12 h-full gap-0 items-stretch">
           {/* Left Column */}
-          <div className="md:col-span-4 relative h-full">
-            <div className="relative w-[90%] md:w-[95%] h-full overflow-hidden rounded-r-[8px]">
+          <div className="md:col-span-4 relative h-screen md:h-full w-full">
+            <div className="relative w-full md:w-[95%] h-full overflow-hidden md:rounded-r-[8px]">
               <Image
                 src="/assets/with-chair-pic.png"
                 alt="Kahafil Ora"
@@ -215,12 +215,12 @@ export default function AboutHero() {
               <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"></div>
 
               {/* NAME BOX */}
-              <div className="absolute top-6 left-6  bg-black/20 backdrop-blur-md px-4 md:px-6 py-2 md:py-3 rounded-[4px] border border-white/20 z-30 uppercase font-poppins tracking-widest text-white font-bold text-[10px] md:text-[22px]">
+              <div className="hidden md:block absolute top-6 left-6  bg-black/20 backdrop-blur-md px-4 md:px-6 py-2 md:py-3 rounded-[4px] border border-white/20 z-30 uppercase font-poppins tracking-widest text-white font-bold text-[10px] md:text-[22px]">
                 KAHAFIL ORA
               </div>
             </div>
 
-            <div className="absolute top-14 right-0 md:-right-16 w-32 md:w-50 h-[30%] aspect-square overflow-hidden  shadow-xl z-40">
+            <div className="hidden md:block absolute top-14 right-0 md:-right-16 w-32 md:w-50 h-[30%] aspect-square overflow-hidden  shadow-xl z-40">
               <Image
                 src="/assets/kahafil-ora-about-original.svg"
                 alt="Kahafil Ora Profile"
@@ -231,12 +231,12 @@ export default function AboutHero() {
           </div>
 
           {/* Right Column */}
-          <div className="md:col-span-8 flex flex-col h-full justify-between px-6 md:px-12 mt-12 md:mt-20 md:pl-32">
+          <div className="flex md:col-span-8 flex-col  justify-between px-6 md:px-12 mt-12 md:mt-20 md:pl-32">
             {/* Top Div: Tabs & Description (2 column layout) */}
             <div className="flex flex-col lg:flex-row  h-full">
               {/* Left Sub-div: Tabs & Scroll Down */}
               <div className="flex flex-col justify-between h-full lg:w-[28%] border-b lg:border-none border-[#444444]/10 pb-8 lg:pb-10 ">
-                <nav className="flex flex-row lg:flex-col gap-8 lg:gap-8 overflow-x-auto no-scrollbar  pb-2 cursor-pointer">
+                <nav className="flex flex-wrap lg:flex-col gap-8 lg:gap-8  no-scrollbar  pb-2 cursor-pointer">
                   {tabs.map((tab) => (
                     <button
                       key={tab.id}
@@ -303,7 +303,7 @@ export default function AboutHero() {
             </div>
 
             {/* Bottom Div */}
-            <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-start lg:items-center pb-20 ">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-start lg:items-center  mt-8 md:mt-0">
               <div className="max-w-[450px]">
                 <p className="font-plus-jakarta text-[14px] md:text-[16px] leading-relaxed text-[#333333] font-medium">
                   Kahafil Ora Was Honored With A Crest Upon Successfully

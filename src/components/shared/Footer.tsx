@@ -123,7 +123,7 @@ const Footer = () => {
       <div className="bg-[#f0f0f0] py-6 px-12">
         <div className="container mx-auto flex flex-col md:flex-row md:items-center gap-4 md:gap-0 justify-between">
           <p className="text-[14px] md:text-[16px] text-black/50 font-plus-jakarta order-2 md:order-0">
-            Copyright © 2025 Kahafil Ora
+            Copyright © {new Date().getFullYear()} Kahafil Ora
           </p>
 
           <Link

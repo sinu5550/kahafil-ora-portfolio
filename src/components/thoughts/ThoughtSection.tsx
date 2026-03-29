@@ -17,7 +17,7 @@ export default function ThoughtSection({ title, items }: ThoughtSectionProps) {
   const hasMore = items.length > 3;
 
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-10 bg-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-0">
         <h2 className="text-[32px] md:text-[50px] font-poppins font-bold text-[#333] mb-12 flex items-center gap-2">
           {title}<span className="text-[#9747FF]">.</span>
