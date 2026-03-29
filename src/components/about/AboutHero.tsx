@@ -273,12 +273,12 @@ export default function AboutHero() {
                         }}
                         transition={{
                           repeat: Infinity,
-                          duration: 1.2,
+                          duration: 2.4,
                           ease: [0.45, 0.05, 0.55, 0.95],
                         }}
-                        className="w-px bg-[#444444] relative origin-top"
+                        className="w-[1.5px] bg-[#444444] relative origin-top"
                       >
-                        <div className="absolute bottom-0  -translate-x-3/7 w-2 h-2 border-b-2 border-r-2 border-[#444444] rotate-45" />
+                        <div className="absolute bottom-0  -translate-x-3/7 w-3 h-3 border-b-2 border-r-2 border-[#444444] rotate-45" />
                       </motion.div>
                     </div>
                   </div>
