@@ -19,8 +19,8 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "HOME", href: "/" },
-    { name: "ABOUT", href: "#about" },
-    { name: "THOUGHTS", href: "#thoughts" },
+    { name: "ABOUT", href: "/about" },
+    { name: "THOUGHTS", href: "/#thoughts" },
   ];
 
   const socialLinks = [
@@ -31,10 +31,13 @@ export default function Navbar() {
   ];
 
   const isActive = (href: string) => {
-    if (href.startsWith("#")) {
-      return activeHash === href;
+    if (href === "/") return pathname === "/" && !activeHash;
+    if (href === "/about") return pathname === "/about";
+    if (href.startsWith("/#") || href.startsWith("#")) {
+      const hash = href.includes("#") ? "#" + href.split("#")[1] : "";
+      return activeHash === hash;
     }
-    return pathname === href && (!activeHash || activeHash === "");
+    return pathname === href;
   };
 
   // Custom Hamburger Icon (4 bars alternating)

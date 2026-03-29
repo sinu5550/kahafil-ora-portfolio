@@ -17,7 +17,7 @@ export default function About() {
   ];
 
   return (
-    <section className="relative w-full py-24 bg-background flex flex-col items-center">
+    <section id="about" className="relative w-full py-24 bg-background flex flex-col items-center">
       <div className="container w-full px-4 md:px-22 3xl:px-0 ">
         {/* Intro Header */}
         <div className="flex flex-col items-center text-center mb-24">
