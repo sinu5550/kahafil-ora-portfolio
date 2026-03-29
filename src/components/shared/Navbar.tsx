@@ -20,7 +20,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "HOME", href: "/" },
     { name: "ABOUT", href: "/about" },
-    { name: "THOUGHTS", href: "/#thoughts" },
+    { name: "THOUGHTS", href: "/thoughts" },
   ];
 
   const socialLinks = [
