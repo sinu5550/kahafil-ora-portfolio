@@ -95,7 +95,7 @@ const tabContent = {
   ),
   words: (
     <div className="space-y-8 ">
-      <div className="relative pl-6 ">
+      <div className="relative pl-6 border-l-2 border-[#444444]/10">
         <p className="font-plus-jakarta text-[16px] md:text-[18px] leading-relaxed text-[#444444] font-light italic">
           "Leadership Is Not About Being In Charge. It's About Taking Care Of
           Those In Your Charge."
@@ -104,7 +104,7 @@ const tabContent = {
           – Simon Sinek
         </span>
       </div>
-      <div className="relative pl-6 ">
+      <div className="relative pl-6 border-l-2 border-[#444444]/10">
         <p className="font-plus-jakarta text-[16px] md:text-[18px] leading-relaxed text-[#444444] font-light italic">
           "Innovation Is Seeing What Everybody Has Seen And Thinking What Nobody
           Has Thought."
@@ -113,7 +113,7 @@ const tabContent = {
           – Dr. Albert Szent-Györgyi
         </span>
       </div>
-      <div className="relative pl-6">
+      <div className="relative pl-6 border-l-2 border-[#444444]/10">
         <p className="font-plus-jakarta text-[16px] md:text-[18px] leading-relaxed text-[#444444] font-light italic">
           "Success Is Not Measured By What You Have, But By The Positive Impact
           You Leave Behind."
@@ -233,7 +233,7 @@ export default function AboutHero() {
           {/* Right Column */}
           <div className="md:col-span-8 flex flex-col h-full justify-between px-6 md:px-12 mt-12 md:mt-20 md:pl-32">
             {/* Top Div: Tabs & Description (2 column layout) */}
-            <div className="flex flex-col lg:flex-row gap-12 lg:gap-12 h-full">
+            <div className="flex flex-col lg:flex-row  h-full">
               {/* Left Sub-div: Tabs & Scroll Down */}
               <div className="flex flex-col justify-between h-full lg:w-[28%] border-b lg:border-none border-[#444444]/10 pb-8 lg:pb-10 ">
                 <nav className="flex flex-row lg:flex-col gap-8 lg:gap-8 overflow-x-auto no-scrollbar  pb-2 cursor-pointer">
