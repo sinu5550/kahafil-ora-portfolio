@@ -32,7 +32,7 @@ const Solutions = () => {
               <React.Fragment key={category.id}>
                 <button
                   onClick={() => setActiveTab(category.id)}
-                  className={`pb-4 px-4 text-[12px] md:text-[22px] font-fragment-mono tracking-wider transition-all relative whitespace-nowrap ${
+                  className={`pb-4 px-4 text-[12px] md:text-[12px] xl:text-[22px] font-fragment-mono tracking-wider transition-all relative whitespace-nowrap ${
                     activeTab === category.id
                       ? "text-[#444444] font-semibold"
                       : "text-[#444444]/30 hover:text-[#444444]/60"

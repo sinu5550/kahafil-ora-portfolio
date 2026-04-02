@@ -11,8 +11,10 @@
   --font-amiri: "Amiri", serif;
   --breakpoint-3xl: 1920px;
   --breakpoint-100: 1920px; /* 1920px at 100% scaling */
-  --breakpoint-110: 1745px; /* 1920px at 110% scaling */
-  --breakpoint-125: 1536px; /* 1920px at 125% scaling */
+  --breakpoint-110: 1745px; 
+  --breakpoint-125: 1536px; 
+  --breakpoint-150: 1100px; 
+  --breakpoint-175: 960px; 
   --spacing-80: 20rem; /* 320px */
   --spacing-106: 26.5rem;
 }
@@ -58,7 +60,7 @@ h6 {
   padding-right: 1.5rem;
 
   @media (min-width: 1280px) and (max-width: 1439px) {
-    max-width: 1260px; /* standard 1280 - padding */
+    max-width: 1400px; /* standard 1280 - padding */
   }
 
   @media (min-width: 1440px) and (max-width: 1919px) {
