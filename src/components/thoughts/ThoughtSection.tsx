@@ -18,7 +18,7 @@ export default function ThoughtSection({ title, items }: ThoughtSectionProps) {
 
   return (
     <section className="py-10 bg-white overflow-hidden">
-      <div className="container mx-auto px-4 md:px-0">
+      <div className="container mx-auto px-4 ">
         <h2 className="text-[32px] md:text-[50px] font-poppins font-bold text-[#333] mb-12 flex items-center gap-2">
           {title}<span className="text-[#9747FF]">.</span>
         </h2>
@@ -49,7 +49,7 @@ export default function ThoughtSection({ title, items }: ThoughtSectionProps) {
                     {item.tags.map((tag, i) => (
                       <span
                         key={i}
-                        className="text-[14px] md:text-[20px] font-poppins font-medium text-black/40"
+                        className="text-[12px] lg:text-[14px] xl:text-[20px] font-poppins font-medium text-black/40"
                       >
                         {tag}{i < item.tags.length - 1 ? "," : ""}
                       </span>
@@ -71,17 +71,17 @@ export default function ThoughtSection({ title, items }: ThoughtSectionProps) {
                       <line x1="8" y1="2" x2="8" y2="6" />
                       <line x1="3" y1="10" x2="21" y2="10" />
                     </svg>
-                    <span className="text-[12px] md:text-[15px] font-poppins font-medium">
+                    <span className="text-[12px]  xl:text-[20px] font-poppins font-medium">
                       {item.date}
                     </span>
                   </div>
                 </div>
 
-                <h3 className="text-[18px] md:text-[26px] font-poppins font-bold text-[#444444] mb-4 leading-tight group-hover:text-[#333]">
+                <h3 className="text-[18px] md:text-[22px] xl:text-[26px] font-poppins font-bold text-[#444444] mb-4 leading-tight group-hover:text-[#333]">
                   {item.title}
                 </h3>
 
-                <p className="text-[13px] md:text-[20px] font-poppins text-[#444444] leading-relaxed mb-6 font-light opacity-80">
+                <p className="text-[13px] md:text-[16px] xl:text-[20px] font-poppins text-[#444444] leading-relaxed mb-6 font-light opacity-80">
                   {item.description}
                 </p>
 
