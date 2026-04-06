@@ -14,7 +14,7 @@ const tabs = [
 const tabContent = {
   biography: (
     <div className="space-y-6">
-      <p className="font-plus-jakarta text-[14px] md:text-[16px] leading-relaxed text-[#444444] font-light">
+      <p className="font-plus-jakarta text-[14px] xl:text-[16px] leading-relaxed text-[#444444] font-light">
         A Visionary Leader With Over 22 Years Of Experience, Kahafil Ora Has
         Consistently Championed Innovation, Growth, And Meaningful Change. As
         The Managing Director Of Goinnovior Limited And Co-Founder Of 360D Soul,
@@ -181,7 +181,7 @@ export default function AboutHero() {
   const [activeTab, setActiveTab] = useState("biography");
 
   return (
-    <section className="relative h-auto md:h-screen md:min-h-[700px] w-full bg-white overflow-hidden pt-0 md:pt-24 pb-10">
+    <section className="relative h-auto   w-full bg-white overflow-hidden pt-0 md:pt-24 pb-10">
       {/* Background Dot Grid Pattern */}
       <div
         className="absolute top-22 right-0 bottom-10 left-0 z-0 opacity-10 pointer-events-none"
@@ -200,7 +200,7 @@ export default function AboutHero() {
                 src="/assets/with-chair-pic.png"
                 alt="Kahafil Ora"
                 fill
-                className="object-cover grayscale brightness-110 contrast-75"
+                className="object-cover grayscale brightness-110 contrast-75 "
                 priority
               />
               {/* Quote Overlay */}
@@ -260,7 +260,7 @@ export default function AboutHero() {
                 </nav>
 
                 {/* SCROLL DOWN Arrow */}
-                <div className="hidden lg:flex flex-col gap-6 ">
+                <div className="hidden lg:flex flex-col gap-6 xl:mt-6">
                   <div className="flex flex-col gap-2 items-start">
                     <span className="text-[18px] font-poppins tracking-widest text-[#444444] uppercase">
                       SCROLL DOWN
@@ -286,7 +286,7 @@ export default function AboutHero() {
               </div>
 
               {/* Tab Content (Description) */}
-              <div className="flex-1 lg:max-w-[800px] mt-1">
+              <div className="flex-1 lg:max-w-[800px] mt-1 ">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={activeTab}
@@ -303,7 +303,7 @@ export default function AboutHero() {
             </div>
 
             {/* Bottom Div */}
-            <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-start lg:items-center  mt-8 md:mt-0">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-start lg:items-center  mt-8 md:mt-3">
               <div className="max-w-[450px]">
                 <p className="font-plus-jakarta text-[14px] md:text-[16px] leading-relaxed text-[#333333] font-medium">
                   Kahafil Ora Was Honored With A Crest Upon Successfully
